@@ -1,10 +1,128 @@
+
+
+/*=====CSS for Dropdown Menus=====*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d06060;
+}
+li {
+    float: left;
+
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: orange;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*===end of drop down css*/
+
+
+/*CSS for Animation and flex*/
+  /* start animation */
+
+#scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        flex:1;
+	        order: 1;
+
+}
+
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+ .Welcome{
+    flex: 1;
+    order: 2;
+    }
+
+  .shadow-div{
+  	text-shadow: 5px 10px 5px black;
+  }
+
+.container-1{
+  
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+        
+  }
+
+h2{
+	color:#3a3a7b;
+	font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+}
+
+
+
+/* end animation*/
+
+
+
 body {
  background-image: url("https://www.itl.cat/pngfile/big/166-1666671_wood-background-food-fruit-table-fruit-on-table.jpg");
  background-repeat: repeat;
 }
 
 /*/* Add a background color to the top navigation Home, contact us etc..*/
-nav ul {
+/*nav ul {
   overflow: hidden;
   background-color: white;
 
@@ -20,7 +138,7 @@ nav li{
 }
 
 /* Style the links inside the navigation bar */
-nav a {
+/*nav a {
 
 	text-decoration: none;
 	color:black;
@@ -28,10 +146,10 @@ nav a {
 }
 
 /* Change the color of links on hover */
-nav a:hover{
+/*nav a:hover{
 	text-decoration: underline;
 	color:Red;
-}
+}*/
 
 /*SEarch button*/
 
@@ -55,126 +173,30 @@ nav a:hover{
   border: 1px solid grey;  
 
 }
-.restaurantList{
-	margin-top: 100px;
-
-}
-
-button{
-	
-	border:1px solid black;
-	padding:10px 25px;
-	display: block;
-	margin-bottom:20px;
-	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
-	border-radius: 15px;
-}
-
-button:hover{
-	background-color: black;
-	color:white;
-
-}
-h1{
-	color:Maroon;
-}
 
 .titleOfthePage{
 
 	position: center;
 	margin-top: 50px;
-}
-
-div{
-	margin-bottom: 20px;
-	margin-left:20px;
-}
-/*contact Us buttons*/
-.blackButton{
-
-	display: inline;
-	border:1px solid black;
-	margin-right: 20px;
-	transition: 0.5s;
-
-}
-.blackButton:hover{
-	
-	background-color: black;
-	
-	
-
-}
-
-.redButton{
-display: inline;
-	border:1px solid red;
-	margin-right: 20px;
-	transition: 0.5s;
-}
-.redButton:hover{
-	
-	background-color: red;
-
-}
-
-.blueButton{
-	display: inline;
-border:1px solid blue;
-transition: 0.5s;
-
-}
-
-.blueButton:hover{
-background-color:blue;
+	color:Maroon;
+	font-family: 'Crimson Text', serif;
+font-family: 'Baloo Chettan 2', cursive;
 }
 
 
 
-h2{
-			color:Orange;
-		}
-		h3{
-			color: blue;
-			font-size: 10px;
-		}
-
-.Submit{
-	border:1px solid black;
-	padding:10px 25px;
-	display: block;
-	font-weight: bold;
-	margin-bottom:20px;
-	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
-	border-radius: 8px;
-}
-
-
-
-#linkBox_content:hover {
-		zoom:125%;
-		position: relative;
-}
-#linkBox_content{
-	position: relative;
-	width: 33%
+/*Home page*/
+.restaurantList{
+	margin-top: 100px;
 
 }
-#linkBox_img{
-	width: 50%;
-	margin-left: 10%;
-}
 
-#linkBox_text{
-	position: absolute;
-	top: 45%;
-	left: 50%;
+/*h1{
+	color:Maroon;
+	font-family: 'Crimson Text', serif;
+font-family: 'Baloo Chettan 2', cursive;
+}*/
 
-	color: white;
-	font-size: 15px;
-	font-family: sans-serif;
-
-}
 
 table,th,td {
 	border: 1px solid black;
@@ -195,11 +217,84 @@ th,td {
 	padding: 12px;
 }
 
-#paragraphSpace
-{
- margin-top: 200px;/*a block of paragraph text I want to
-  create a break or space above it, but only that specific paragraph*/
+
+
+div{
+	margin-bottom: 20px;
+	margin-left:20px;
 }
+
+
+/*contact Us page*/
+
+button{
+	
+	border:1px solid black;
+	padding:10px 25px;
+	display: block;
+	margin-bottom:20px;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 15px;
+}
+
+button:hover{
+	background-color: black;
+	color:white;
+
+}
+
+.blackButton{
+
+	display:inline-flex;
+	flex-direction: row;
+	border:1px solid black;
+	margin-right: 20px;
+	transition: 0.5s;
+}
+
+.blackButton:hover{
+	
+	background-color: black;
+
+}
+
+.redButton{
+display: inline-flex;
+	border:1px solid red;
+	margin-right: 20px;
+	transition: 0.5s;
+}
+
+.redButton:hover{
+	
+	background-color: red;
+
+}
+
+.blueButton{
+	display: inline-flex;
+border:1px solid blue;
+transition: 0.5s;
+
+}
+
+.blueButton:hover{
+background-color:blue;
+}
+
+
+.Submit{
+	border:1px solid black;
+	padding:10px 25px;
+	display: block;
+	font-weight: bold;
+	margin-bottom:20px;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+}
+
+
+
 
 form input, form select{
 	display:inline;
@@ -224,14 +319,16 @@ form input, form select{
  
 }
 
-.FundBUtton span{
+.FundBUtton span {
 	cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-.FundButton span:after {
-  
+
+
+.FundButton span:after  {
+ 
   position: absolute;
   opacity: 0;
   top: 0;
@@ -249,6 +346,14 @@ form input, form select{
   opacity: 1;
   right: 0;
 }
+
+
+
+#paragraphSpace
+{
+ margin-top: 200px;/*a block of paragraph text I want to
+  create a break or space above it, but only that specific paragraph*/
+} 
 
 
 
