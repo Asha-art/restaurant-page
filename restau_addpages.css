@@ -1,0 +1,278 @@
+body {
+ background-image: url("https://www.itl.cat/pngfile/big/166-1666671_wood-background-food-fruit-table-fruit-on-table.jpg");
+ background-repeat: repeat;
+}
+
+/*/* Add a background color to the top navigation Home, contact us etc..*/
+nav ul {
+  overflow: hidden;
+  background-color: white;
+
+}
+
+
+nav li{
+
+	display: inline;
+	font-size: 20px;
+	margin-right: 30px;
+	font-family: sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+
+	text-decoration: none;
+	color:black;
+
+}
+
+/* Change the color of links on hover */
+nav a:hover{
+	text-decoration: underline;
+	color:Red;
+}
+
+/*SEarch button*/
+
+.search{
+	
+	 float: right;
+	position: relative;
+ 	 width:200px ;
+  
+}
+
+.searchButton{
+	
+	 float: right;
+  
+  width: 50%;
+  padding: 0px;
+ 
+  color: black;
+  font-size: 12px;
+  border: 1px solid grey;  
+
+}
+.restaurantList{
+	margin-top: 100px;
+
+}
+
+button{
+	
+	border:1px solid black;
+	padding:10px 25px;
+	display: block;
+	margin-bottom:20px;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 15px;
+}
+
+button:hover{
+	background-color: black;
+	color:white;
+
+}
+h1{
+	color:Maroon;
+}
+
+.titleOfthePage{
+
+	position: center;
+	margin-top: 50px;
+}
+
+div{
+	margin-bottom: 20px;
+	margin-left:20px;
+}
+/*contact Us buttons*/
+.blackButton{
+
+	display: inline;
+	border:1px solid black;
+	margin-right: 20px;
+	transition: 0.5s;
+
+}
+.blackButton:hover{
+	
+	background-color: black;
+	
+	
+
+}
+
+.redButton{
+display: inline;
+	border:1px solid red;
+	margin-right: 20px;
+	transition: 0.5s;
+}
+.redButton:hover{
+	
+	background-color: red;
+
+}
+
+.blueButton{
+	display: inline;
+border:1px solid blue;
+transition: 0.5s;
+
+}
+
+.blueButton:hover{
+background-color:blue;
+}
+
+
+
+h2{
+			color:Orange;
+		}
+		h3{
+			color: blue;
+			font-size: 10px;
+		}
+
+.Submit{
+	border:1px solid black;
+	padding:10px 25px;
+	display: block;
+	font-weight: bold;
+	margin-bottom:20px;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+}
+
+
+
+#linkBox_content:hover {
+		zoom:125%;
+		position: relative;
+}
+#linkBox_content{
+	position: relative;
+	width: 33%
+
+}
+#linkBox_img{
+	width: 50%;
+	margin-left: 10%;
+}
+
+#linkBox_text{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+
+	color: white;
+	font-size: 15px;
+	font-family: sans-serif;
+
+}
+
+table,th,td {
+	border: 1px solid black;
+}
+
+table {
+
+
+	background-color: Orange;
+	padding:2px;
+	margin:0 auto; /* when the is two numbers, 
+	the first number is for top+bottom, the secon is for right+left 
+	or use margin-left , margin right */
+}
+
+th,td {
+	background-color: white;
+	padding: 12px;
+}
+
+#paragraphSpace
+{
+ margin-top: 200px;/*a block of paragraph text I want to
+  create a break or space above it, but only that specific paragraph*/
+}
+
+form input, form select{
+	display:inline;
+	margin-left:20px;
+
+}
+
+.inline{
+	display: inline;
+}
+
+
+/*Events page*/
+
+
+.FundButton {
+    
+  text-align: center;
+    
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.FundBUtton span{
+	cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.FundButton span:after {
+  
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.FundButton:hover span {
+  padding-right: 25px;
+}
+
+
+
+.Fundbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
